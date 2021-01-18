@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue js Project class-1</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+     <div id="app">
+     <h1 style="text-align:center">v-for--object</h1>
+     
+      <p v-for="(person,index,key) in persons">
+         {{ key }} : {{ index }} : {{  person }}
+
+      </p>
+      <hr>
+      <h1 style="text-align:center">v-for-- array</h1>
+     
+      <p v-for="(user,index) in users">
+           {{ index }} : {{  user }}
+
+      </p>
+ <hr>
+ <h1 style="text-align:center">v-once</h1>
+     
+      <p>
+         {{ name }}
+
+      </p>
+      <!-- it works as static variable so we can't update it -->
+      <p v-once>
+         {{ name }}
+
+      </p>
+      {{ update() }}
+   </div>
+    <script src="app.js"></script>
+</body>
+</html>

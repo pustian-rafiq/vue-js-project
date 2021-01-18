@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue js Project class-1</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <!-- Vue js Directives -->
+    <div id="app">
+     <!-- <h1 style="text-align:center">v-bind</h1>
+     <hr>
+    <img v-bind:src="src" v-bind:alt="alt" v-bind:title="ttitle">
+    <hr>
+    <a v-bind:href="link">Click me</a>
+      <hr>   
+      <h1 style="text-align:center">v-text</h1>
+        <p v-text="mytext"></p>
+     <hr>    
+     <h1 style="text-align:center">v-html</h1>
+     <p v-html="myhtml"></p>
+     <hr>     -->
+
+     <h1 style="text-align:center">v-if</h1>
+
+     <p v-if=" bangla >= passmark">
+        <strong> Yor are pass Bangla.</strong>
+     </p>
+     <!-- when we want to use multiple tag we will always template tag  -->
+     <template v-else-if="math >= passmark">
+      
+            <p>
+                <strong> Yor are get best mark in Math.</strong>
+                <strong> {{ addTwoNumber() }}.</strong>
+             </p>
+        
+     </template>
+     
+     <p v-else-if="english >= passmark">
+        <strong> Yor are pass English.</strong>
+     </p>
+     <p v-else >
+        <strong> Yor are fail.</strong>
+     </p>
+     <hr>  
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
